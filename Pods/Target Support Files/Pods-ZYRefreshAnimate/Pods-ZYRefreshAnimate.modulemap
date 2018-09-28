@@ -1,0 +1,6 @@
+framework module Pods_ZYRefreshAnimate {
+  umbrella header "Pods-ZYRefreshAnimate-umbrella.h"
+
+  export *
+  module * { export * }
+}

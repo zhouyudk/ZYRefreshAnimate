@@ -1,0 +1,6 @@
+framework module ZYShimmer {
+  umbrella header "ZYShimmer-umbrella.h"
+
+  export *
+  module * { export * }
+}

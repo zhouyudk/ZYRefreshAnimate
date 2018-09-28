@@ -1,0 +1,1122 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02B6166834FDE582A7475C4D021C532A /* MJRefreshBackStateFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 85EE92F43E332E9A2BE4D22D351361F2 /* MJRefreshBackStateFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		04E5A6920974A68B2D15090CBE56D58B /* NSBundle+MJRefresh.h in Headers */ = {isa = PBXBuildFile; fileRef = DCD507A3A5E912DC1C941C1696926BA2 /* NSBundle+MJRefresh.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		10884584B45C6564993981E004AE6B5B /* MJRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B7A5091DE071E0A13FA77095150E2A4E /* MJRefresh.bundle */; };
+		12AE2CA2A317A12D59FF508A82F26E54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		1364E587347DB7B32700946C39D69836 /* MJRefreshBackGifFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = C338FA6043ADE0FD6407548B1DC47FD5 /* MJRefreshBackGifFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		16145634E76498599E08EE59BF2BA9D9 /* MJRefreshBackNormalFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = D00A27874CE87A92D635AA66294223CD /* MJRefreshBackNormalFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19A2D61A783C422B8828408F98E56290 /* MJRefreshAutoFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BA53CB24520650BD85483B7EE80C03F /* MJRefreshAutoFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E61B18A3921787916DD8AE3C8D5A3B0 /* ZYNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B63492F7E838F9FF8D068BF9446FE /* ZYNavigationBar.swift */; };
+		205C539389D123F0D635AEEE94E23A57 /* MJRefresh-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F30C46D4FD482FC721CAA490884F3B8 /* MJRefresh-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		28A43B7001AC6B77952975F0EB046163 /* Pods-ZYRefreshAnimate-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 868CF37463DC85ABF4BF994D8D378841 /* Pods-ZYRefreshAnimate-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2AE9F2C800AA6D4A6EDD9DB4B93DCDCF /* MJRefreshAutoGifFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = CA95F43E57B382FCCCC9D917E3A9D595 /* MJRefreshAutoGifFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CE74B846D7AF4EF27B0B68357DBBE26 /* ZYNavigationBar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BADE9FCF1EE9522A1BC61E7E4BC195C /* ZYNavigationBar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D17036E492CF8CDF2E70852DA0627AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		2EFA8D0D3C31B3A77612C955773F7D36 /* MJRefreshBackNormalFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4675AA60EDA64E37FD12C8EB28404973 /* MJRefreshBackNormalFooter.m */; };
+		31D52A4583BB36984AEC4C6D71265746 /* MJRefreshStateHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D2A20094B8F07FB661EC87B1C66F30 /* MJRefreshStateHeader.m */; };
+		34E7425ED442231DE8D428E84A3777C9 /* ZYShimmer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A7B43B76ED964D557C898636C2F4908 /* ZYShimmer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		35CCA902DF0D8C0AB9C3A7C8AF4FD40D /* UIScrollView+MJExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 151B15A89A59F7561EF472E30E3E3118 /* UIScrollView+MJExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		366A0A2B7CC87D039FD802C7FF82BEE7 /* MJRefreshNormalHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = F7371F688F47017D047319246769063A /* MJRefreshNormalHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		370474488F17310C2E917826EE8B93FB /* MJRefreshHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = F34E0CF5E65B0DD54D86CE8170D42CCF /* MJRefreshHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4028DA6290D5A4C64DB4AD130B27B7E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		457D3835EAB90DC73DDD133736BFD872 /* ZYShimmer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DDFEB8EB91401B0C83FADD913F59AF6B /* ZYShimmer-dummy.m */; };
+		482B75E0CB8031D3F673F70242FA41FB /* MJRefresh-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D9DDEB1A4D6C5D122E79555056DEA319 /* MJRefresh-dummy.m */; };
+		4E75F1293990391FB686C2BBD734E715 /* MJRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB2D3CBC461325253B3A917272F208F /* MJRefreshFooter.m */; };
+		57F9EB19DF46EC2590C8B10DB89D146E /* MJRefreshConst.h in Headers */ = {isa = PBXBuildFile; fileRef = 950BB48D38BFD337FC85E9E14D2F328B /* MJRefreshConst.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62E84F67014328D5ED1B0F65775CDDFA /* MJRefreshFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = DD25E6D6612C4DCC640AC19E18B7FF56 /* MJRefreshFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6C7D22626A2F5AD4BB1ACC02D8F10731 /* MJRefresh.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C873C62BD9DB8DA8047B70350F598BA /* MJRefresh.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6D2FD545E0B463F0210B5242E1477721 /* MJRefreshAutoStateFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = EC1BB3CC04C94F3D37563E4A9B414FAF /* MJRefreshAutoStateFooter.m */; };
+		6E560D2FE4A36AB742453E3CF5F4CE68 /* MJRefreshAutoNormalFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 297714FEA45FCF2CBDF81CB7A9229B05 /* MJRefreshAutoNormalFooter.m */; };
+		7203872DAF858D609912A7D0F768FEAF /* UIScrollView+MJRefresh.h in Headers */ = {isa = PBXBuildFile; fileRef = 203FD254C26D90B493523F2D3667902F /* UIScrollView+MJRefresh.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		72BA18069C0DFC671464EB497250D358 /* MJRefreshBackFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = FE1E241B724ACE63E853326043E90ADB /* MJRefreshBackFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79E7436378404C9DD06E9F65180D62A4 /* MJRefreshAutoNormalFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = BED2494B34183812388EDD61004B3A4F /* MJRefreshAutoNormalFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F9B9007891D36363BE6BE0CB08C1006 /* MJRefreshStateHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = B65E8C7C95D0AA72E2977DDFE2A58091 /* MJRefreshStateHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7FC1CEA91F90834F660AA84E603B37AD /* MJRefreshGifHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = E2ABDA4DFAF870F776F278F653E7FA44 /* MJRefreshGifHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		81727E0FB34C0FE08D39BDE52687701F /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2646F68188C8BAD39FDF4CBCD64689E6 /* UIScrollView+MJExtension.m */; };
+		8234F492BBE286EA25736C05B5728C82 /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 608A55FBA02509EC6FAE71907F87DB81 /* UIView+MJExtension.m */; };
+		836D7FC3AF821117429EB18D5555C1E9 /* ZYNavigationBar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D5AB8F325F342EF97F903A8894441D1 /* ZYNavigationBar-dummy.m */; };
+		8CCA07391231EAA7832AFCCFF07A54D1 /* ZYShimmerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA6255351C99DF32A6B3C282CDA4E9E /* ZYShimmerView.swift */; };
+		94237113054B0D5CE28D86E2C827BD72 /* MJRefreshGifHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 68E431AE8B025BB7752B653FB9237434 /* MJRefreshGifHeader.m */; };
+		9A9931F189A4EF1FABC8C731BC11AEFE /* NSBundle+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = D69CD02F1DA7D808AA2834CAA444D575 /* NSBundle+MJRefresh.m */; };
+		9E16C3DDB762314B45EA450476957D30 /* Pods-ZYRefreshAnimate-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B3C4A2394F612D0BC50CEAF9868301 /* Pods-ZYRefreshAnimate-dummy.m */; };
+		A7ED1FA2F59F020062DE3B579AF84F55 /* MJRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5340690DAD8587B58C97DC6738AD4A /* MJRefreshComponent.m */; };
+		B356C813D009D8F48B49B93F970B1F1B /* UIView+MJExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D0136C5855C9047CF603714845E7407 /* UIView+MJExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B50A173CC006987E8682D89650F14F63 /* MJRefreshAutoGifFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = E3D51CEC0D0549CCA8AD013D7A6BF24C /* MJRefreshAutoGifFooter.m */; };
+		B7170162BEBD63676519BFABE4D76287 /* MJRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 93FCE278B251326324FAB9E03AC881A3 /* MJRefreshHeader.m */; };
+		B8E7316EF3F8D0EB9360C209D49E32F5 /* ZYShimmerLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0D2C44E579DFB78E9AE930684FFEEE /* ZYShimmerLayer.swift */; };
+		B967DE3AFEE4C96AAB002B8095B6C7C2 /* MJRefreshAutoStateFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B153BB7A025CFD89C398469F954342A /* MJRefreshAutoStateFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C1117CCC45FA6780A4E9CC0879D5C3EA /* MJRefreshBackStateFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 06EB1AEE43B584538098005C8AEF9B77 /* MJRefreshBackStateFooter.m */; };
+		CF76306C6168AD7A6C076288CA899B02 /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CE43DC86E1D40D2010B4189380D97F /* UIScrollView+MJRefresh.m */; };
+		DB70C0344D46C9DBD3DBD9CA84C639D3 /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2433146DDE05FE196F2573201172B52F /* MJRefreshAutoFooter.m */; };
+		DEF65EB64591CE2D6F99463627951710 /* MJRefreshComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = FB698EA4632E514AAC869306269B20E2 /* MJRefreshComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E7B90E61C4907FE5F3872A04F9762EED /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4C870E8C265B9FD2BAF02F3FB7EA27 /* UIViewController+Extension.swift */; };
+		E83A8BE923CF841DE8515C9FC7B69DC8 /* ZYNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C530A29AE5132834762B7E825137BC21 /* ZYNavigationController.swift */; };
+		EEDC5683FF36946364A3C8344630705B /* MJRefreshBackFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 83ED52288C5BDC34B403660FA5501ACC /* MJRefreshBackFooter.m */; };
+		EF873453BEEE867C2F8C43660CEB4A78 /* MJRefreshNormalHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 31090B9947848A2F5C38DB4BF4267758 /* MJRefreshNormalHeader.m */; };
+		F024CC151BA9C2DCEEEDB1857C832CB8 /* MJRefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 501657107F68368AEF8C22A39BC0DB17 /* MJRefreshConst.m */; };
+		F41FA61294C6ABEEAEDC06A420AD696E /* MJRefreshBackGifFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = DF564BB65120D19FD43C451974B80812 /* MJRefreshBackGifFooter.m */; };
+		F4612DC50633404615D5706386380DC6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0EEC8665D342E81529830FA4D0165B7B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 546B747B9DB0515E059EEBA0B9E98B42;
+			remoteInfo = MJRefresh;
+		};
+		902AFDEE2B46C3C5B6A6FFDB4C759941 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F067B7CD0168D9F29E201C3657177F9A;
+			remoteInfo = ZYShimmer;
+		};
+		A0D1E45FA38D733B28D05457BFBC24F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88F1349FD9DC45A9CE9C902060A3F4CE;
+			remoteInfo = ZYNavigationBar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06EB1AEE43B584538098005C8AEF9B77 /* MJRefreshBackStateFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshBackStateFooter.m; path = MJRefresh/Custom/Footer/Back/MJRefreshBackStateFooter.m; sourceTree = "<group>"; };
+		0A7B43B76ED964D557C898636C2F4908 /* ZYShimmer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZYShimmer-umbrella.h"; sourceTree = "<group>"; };
+		151B15A89A59F7561EF472E30E3E3118 /* UIScrollView+MJExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+MJExtension.h"; path = "MJRefresh/UIScrollView+MJExtension.h"; sourceTree = "<group>"; };
+		176F2C92C3C18B538A8967A0AE9DDB0F /* ZYNavigationBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZYNavigationBar.framework; path = ZYNavigationBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B0CDA2202FF60156CDF9F1419B3AEFC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		203FD254C26D90B493523F2D3667902F /* UIScrollView+MJRefresh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+MJRefresh.h"; path = "MJRefresh/UIScrollView+MJRefresh.h"; sourceTree = "<group>"; };
+		210F6BECD898FD94B4643C9CD5E5A800 /* ZYShimmer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ZYShimmer.modulemap; sourceTree = "<group>"; };
+		2433146DDE05FE196F2573201172B52F /* MJRefreshAutoFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshAutoFooter.m; path = MJRefresh/Base/MJRefreshAutoFooter.m; sourceTree = "<group>"; };
+		2646F68188C8BAD39FDF4CBCD64689E6 /* UIScrollView+MJExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+MJExtension.m"; path = "MJRefresh/UIScrollView+MJExtension.m"; sourceTree = "<group>"; };
+		297714FEA45FCF2CBDF81CB7A9229B05 /* MJRefreshAutoNormalFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshAutoNormalFooter.m; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoNormalFooter.m; sourceTree = "<group>"; };
+		2B153BB7A025CFD89C398469F954342A /* MJRefreshAutoStateFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshAutoStateFooter.h; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoStateFooter.h; sourceTree = "<group>"; };
+		2B40C7CAFC388FF4A50B94B7B0D34C8B /* ZYShimmer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZYShimmer.xcconfig; sourceTree = "<group>"; };
+		31090B9947848A2F5C38DB4BF4267758 /* MJRefreshNormalHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshNormalHeader.m; path = MJRefresh/Custom/Header/MJRefreshNormalHeader.m; sourceTree = "<group>"; };
+		35B3C4A2394F612D0BC50CEAF9868301 /* Pods-ZYRefreshAnimate-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZYRefreshAnimate-dummy.m"; sourceTree = "<group>"; };
+		3A5340690DAD8587B58C97DC6738AD4A /* MJRefreshComponent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshComponent.m; path = MJRefresh/Base/MJRefreshComponent.m; sourceTree = "<group>"; };
+		3C873C62BD9DB8DA8047B70350F598BA /* MJRefresh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefresh.h; path = MJRefresh/MJRefresh.h; sourceTree = "<group>"; };
+		3E882C7C2CE976640E513E9984AE7D09 /* Pods-ZYRefreshAnimate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZYRefreshAnimate.debug.xcconfig"; sourceTree = "<group>"; };
+		409ED778B5DF743B1D778D67B823252C /* MJRefresh-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MJRefresh-prefix.pch"; sourceTree = "<group>"; };
+		4643134C3CDEF75EB576B6016C6F58DC /* Pods-ZYRefreshAnimate-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZYRefreshAnimate-acknowledgements.plist"; sourceTree = "<group>"; };
+		4675AA60EDA64E37FD12C8EB28404973 /* MJRefreshBackNormalFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshBackNormalFooter.m; path = MJRefresh/Custom/Footer/Back/MJRefreshBackNormalFooter.m; sourceTree = "<group>"; };
+		4BA53CB24520650BD85483B7EE80C03F /* MJRefreshAutoFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshAutoFooter.h; path = MJRefresh/Base/MJRefreshAutoFooter.h; sourceTree = "<group>"; };
+		501657107F68368AEF8C22A39BC0DB17 /* MJRefreshConst.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshConst.m; path = MJRefresh/MJRefreshConst.m; sourceTree = "<group>"; };
+		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		608A55FBA02509EC6FAE71907F87DB81 /* UIView+MJExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+MJExtension.m"; path = "MJRefresh/UIView+MJExtension.m"; sourceTree = "<group>"; };
+		62D127DF92DEDB24E528CD21D3672793 /* Pods-ZYRefreshAnimate-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZYRefreshAnimate-frameworks.sh"; sourceTree = "<group>"; };
+		68E431AE8B025BB7752B653FB9237434 /* MJRefreshGifHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshGifHeader.m; path = MJRefresh/Custom/Header/MJRefreshGifHeader.m; sourceTree = "<group>"; };
+		6B0D2C44E579DFB78E9AE930684FFEEE /* ZYShimmerLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZYShimmerLayer.swift; path = Source/ZYShimmerLayer.swift; sourceTree = "<group>"; };
+		6DB2D3CBC461325253B3A917272F208F /* MJRefreshFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshFooter.m; path = MJRefresh/Base/MJRefreshFooter.m; sourceTree = "<group>"; };
+		7B42945A27E4B835443C2A4AB09A970C /* ZYShimmer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZYShimmer.framework; path = ZYShimmer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EE8FFE9DCBEBB5EEC30DA880D69BB43 /* Pods-ZYRefreshAnimate-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZYRefreshAnimate-resources.sh"; sourceTree = "<group>"; };
+		7F25E1ACAFDDF5B11DA53690C0A34873 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83ED52288C5BDC34B403660FA5501ACC /* MJRefreshBackFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshBackFooter.m; path = MJRefresh/Base/MJRefreshBackFooter.m; sourceTree = "<group>"; };
+		84345909CCFC7DDD6F6BBF93AE05CB7A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85EE92F43E332E9A2BE4D22D351361F2 /* MJRefreshBackStateFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshBackStateFooter.h; path = MJRefresh/Custom/Footer/Back/MJRefreshBackStateFooter.h; sourceTree = "<group>"; };
+		868CF37463DC85ABF4BF994D8D378841 /* Pods-ZYRefreshAnimate-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZYRefreshAnimate-umbrella.h"; sourceTree = "<group>"; };
+		8BADE9FCF1EE9522A1BC61E7E4BC195C /* ZYNavigationBar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZYNavigationBar-umbrella.h"; sourceTree = "<group>"; };
+		8C4C73BC187B7C7CA37E90D2106ACAEE /* Pods-ZYRefreshAnimate-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZYRefreshAnimate-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8D0136C5855C9047CF603714845E7407 /* UIView+MJExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+MJExtension.h"; path = "MJRefresh/UIView+MJExtension.h"; sourceTree = "<group>"; };
+		8D5AB8F325F342EF97F903A8894441D1 /* ZYNavigationBar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZYNavigationBar-dummy.m"; sourceTree = "<group>"; };
+		8F30C46D4FD482FC721CAA490884F3B8 /* MJRefresh-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MJRefresh-umbrella.h"; sourceTree = "<group>"; };
+		90A30C94E8BC8EEFF903A9CA52F704E9 /* Pods-ZYRefreshAnimate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZYRefreshAnimate.release.xcconfig"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93FCE278B251326324FAB9E03AC881A3 /* MJRefreshHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshHeader.m; path = MJRefresh/Base/MJRefreshHeader.m; sourceTree = "<group>"; };
+		950BB48D38BFD337FC85E9E14D2F328B /* MJRefreshConst.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshConst.h; path = MJRefresh/MJRefreshConst.h; sourceTree = "<group>"; };
+		A2CE43DC86E1D40D2010B4189380D97F /* UIScrollView+MJRefresh.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+MJRefresh.m"; path = "MJRefresh/UIScrollView+MJRefresh.m"; sourceTree = "<group>"; };
+		AA4C870E8C265B9FD2BAF02F3FB7EA27 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Extension.swift"; path = "Source/UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		AABB69C1D3D7AD0C337656B96C072A60 /* ZYNavigationBar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ZYNavigationBar.modulemap; sourceTree = "<group>"; };
+		AF3F3E9C9803AF3F0D802B0506979DDB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B65E8C7C95D0AA72E2977DDFE2A58091 /* MJRefreshStateHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshStateHeader.h; path = MJRefresh/Custom/Header/MJRefreshStateHeader.h; sourceTree = "<group>"; };
+		B7A5091DE071E0A13FA77095150E2A4E /* MJRefresh.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = MJRefresh.bundle; path = MJRefresh/MJRefresh.bundle; sourceTree = "<group>"; };
+		BED2494B34183812388EDD61004B3A4F /* MJRefreshAutoNormalFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshAutoNormalFooter.h; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoNormalFooter.h; sourceTree = "<group>"; };
+		C338FA6043ADE0FD6407548B1DC47FD5 /* MJRefreshBackGifFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshBackGifFooter.h; path = MJRefresh/Custom/Footer/Back/MJRefreshBackGifFooter.h; sourceTree = "<group>"; };
+		C42335ABB4EEEE9C28521C8A0755F4D7 /* MJRefresh.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MJRefresh.modulemap; sourceTree = "<group>"; };
+		C530A29AE5132834762B7E825137BC21 /* ZYNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZYNavigationController.swift; path = Source/ZYNavigationController.swift; sourceTree = "<group>"; };
+		C92B63492F7E838F9FF8D068BF9446FE /* ZYNavigationBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZYNavigationBar.swift; path = Source/ZYNavigationBar.swift; sourceTree = "<group>"; };
+		CA95F43E57B382FCCCC9D917E3A9D595 /* MJRefreshAutoGifFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshAutoGifFooter.h; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoGifFooter.h; sourceTree = "<group>"; };
+		CC5F1571E24440B1688FEBFA4E0AD498 /* ZYNavigationBar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZYNavigationBar-prefix.pch"; sourceTree = "<group>"; };
+		CC72B9323E61A42CFB2AC60122257A4C /* MJRefresh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MJRefresh.framework; path = MJRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D00A27874CE87A92D635AA66294223CD /* MJRefreshBackNormalFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshBackNormalFooter.h; path = MJRefresh/Custom/Footer/Back/MJRefreshBackNormalFooter.h; sourceTree = "<group>"; };
+		D267FBC70946B3F19036C1A025A441F0 /* Pods-ZYRefreshAnimate.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ZYRefreshAnimate.modulemap"; sourceTree = "<group>"; };
+		D4EFCF81B20A4B9144CD7031C9721287 /* ZYNavigationBar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZYNavigationBar.xcconfig; sourceTree = "<group>"; };
+		D69CD02F1DA7D808AA2834CAA444D575 /* NSBundle+MJRefresh.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSBundle+MJRefresh.m"; path = "MJRefresh/NSBundle+MJRefresh.m"; sourceTree = "<group>"; };
+		D8A405E8ED87B2D641FC1BCDE1568AEB /* MJRefresh.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MJRefresh.xcconfig; sourceTree = "<group>"; };
+		D9DDEB1A4D6C5D122E79555056DEA319 /* MJRefresh-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MJRefresh-dummy.m"; sourceTree = "<group>"; };
+		DCD507A3A5E912DC1C941C1696926BA2 /* NSBundle+MJRefresh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSBundle+MJRefresh.h"; path = "MJRefresh/NSBundle+MJRefresh.h"; sourceTree = "<group>"; };
+		DD25E6D6612C4DCC640AC19E18B7FF56 /* MJRefreshFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshFooter.h; path = MJRefresh/Base/MJRefreshFooter.h; sourceTree = "<group>"; };
+		DDFEB8EB91401B0C83FADD913F59AF6B /* ZYShimmer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZYShimmer-dummy.m"; sourceTree = "<group>"; };
+		DF564BB65120D19FD43C451974B80812 /* MJRefreshBackGifFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshBackGifFooter.m; path = MJRefresh/Custom/Footer/Back/MJRefreshBackGifFooter.m; sourceTree = "<group>"; };
+		E0CA8ED95180BFB3C0A8357C18154941 /* Pods_ZYRefreshAnimate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ZYRefreshAnimate.framework; path = "Pods-ZYRefreshAnimate.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2ABDA4DFAF870F776F278F653E7FA44 /* MJRefreshGifHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshGifHeader.h; path = MJRefresh/Custom/Header/MJRefreshGifHeader.h; sourceTree = "<group>"; };
+		E3D51CEC0D0549CCA8AD013D7A6BF24C /* MJRefreshAutoGifFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshAutoGifFooter.m; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoGifFooter.m; sourceTree = "<group>"; };
+		EC1BB3CC04C94F3D37563E4A9B414FAF /* MJRefreshAutoStateFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshAutoStateFooter.m; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoStateFooter.m; sourceTree = "<group>"; };
+		ECA6255351C99DF32A6B3C282CDA4E9E /* ZYShimmerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZYShimmerView.swift; path = Source/ZYShimmerView.swift; sourceTree = "<group>"; };
+		ECCD66F1124FA2E45E7BEE9766B80003 /* ZYShimmer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZYShimmer-prefix.pch"; sourceTree = "<group>"; };
+		F34E0CF5E65B0DD54D86CE8170D42CCF /* MJRefreshHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshHeader.h; path = MJRefresh/Base/MJRefreshHeader.h; sourceTree = "<group>"; };
+		F7371F688F47017D047319246769063A /* MJRefreshNormalHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshNormalHeader.h; path = MJRefresh/Custom/Header/MJRefreshNormalHeader.h; sourceTree = "<group>"; };
+		F8D2A20094B8F07FB661EC87B1C66F30 /* MJRefreshStateHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshStateHeader.m; path = MJRefresh/Custom/Header/MJRefreshStateHeader.m; sourceTree = "<group>"; };
+		FB698EA4632E514AAC869306269B20E2 /* MJRefreshComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshComponent.h; path = MJRefresh/Base/MJRefreshComponent.h; sourceTree = "<group>"; };
+		FE1E241B724ACE63E853326043E90ADB /* MJRefreshBackFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshBackFooter.h; path = MJRefresh/Base/MJRefreshBackFooter.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C080A190A438FBEB31289A326D053AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4028DA6290D5A4C64DB4AD130B27B7E9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4330790BF93619542494717EF5872A17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12AE2CA2A317A12D59FF508A82F26E54 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D2350DA3CADD48EEC98A6E0FABB108F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D17036E492CF8CDF2E70852DA0627AD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7C8401A5A49DFA2573593ADDD0C6F34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4612DC50633404615D5706386380DC6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		25CD12C55EE6B3BEF3871C16538FC1F3 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4A3B28316EA7EFEA51649880D9B0E4AA /* Pods-ZYRefreshAnimate */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		4A3B28316EA7EFEA51649880D9B0E4AA /* Pods-ZYRefreshAnimate */ = {
+			isa = PBXGroup;
+			children = (
+				1B0CDA2202FF60156CDF9F1419B3AEFC /* Info.plist */,
+				D267FBC70946B3F19036C1A025A441F0 /* Pods-ZYRefreshAnimate.modulemap */,
+				8C4C73BC187B7C7CA37E90D2106ACAEE /* Pods-ZYRefreshAnimate-acknowledgements.markdown */,
+				4643134C3CDEF75EB576B6016C6F58DC /* Pods-ZYRefreshAnimate-acknowledgements.plist */,
+				35B3C4A2394F612D0BC50CEAF9868301 /* Pods-ZYRefreshAnimate-dummy.m */,
+				62D127DF92DEDB24E528CD21D3672793 /* Pods-ZYRefreshAnimate-frameworks.sh */,
+				7EE8FFE9DCBEBB5EEC30DA880D69BB43 /* Pods-ZYRefreshAnimate-resources.sh */,
+				868CF37463DC85ABF4BF994D8D378841 /* Pods-ZYRefreshAnimate-umbrella.h */,
+				3E882C7C2CE976640E513E9984AE7D09 /* Pods-ZYRefreshAnimate.debug.xcconfig */,
+				90A30C94E8BC8EEFF903A9CA52F704E9 /* Pods-ZYRefreshAnimate.release.xcconfig */,
+			);
+			name = "Pods-ZYRefreshAnimate";
+			path = "Target Support Files/Pods-ZYRefreshAnimate";
+			sourceTree = "<group>";
+		};
+		4B469C44FB7DE0109D3F8E5093A13747 /* ZYShimmer */ = {
+			isa = PBXGroup;
+			children = (
+				6B0D2C44E579DFB78E9AE930684FFEEE /* ZYShimmerLayer.swift */,
+				ECA6255351C99DF32A6B3C282CDA4E9E /* ZYShimmerView.swift */,
+				B694E63409F9FEA6D79E1722596745E3 /* Support Files */,
+			);
+			name = ZYShimmer;
+			path = ZYShimmer;
+			sourceTree = "<group>";
+		};
+		4B982C3572EDEC7CE366B8A9394038D5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AF3F3E9C9803AF3F0D802B0506979DDB /* Info.plist */,
+				C42335ABB4EEEE9C28521C8A0755F4D7 /* MJRefresh.modulemap */,
+				D8A405E8ED87B2D641FC1BCDE1568AEB /* MJRefresh.xcconfig */,
+				D9DDEB1A4D6C5D122E79555056DEA319 /* MJRefresh-dummy.m */,
+				409ED778B5DF743B1D778D67B823252C /* MJRefresh-prefix.pch */,
+				8F30C46D4FD482FC721CAA490884F3B8 /* MJRefresh-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MJRefresh";
+			sourceTree = "<group>";
+		};
+		4D56EF7F5800AD053473378087A8137F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				84345909CCFC7DDD6F6BBF93AE05CB7A /* Info.plist */,
+				AABB69C1D3D7AD0C337656B96C072A60 /* ZYNavigationBar.modulemap */,
+				D4EFCF81B20A4B9144CD7031C9721287 /* ZYNavigationBar.xcconfig */,
+				8D5AB8F325F342EF97F903A8894441D1 /* ZYNavigationBar-dummy.m */,
+				CC5F1571E24440B1688FEBFA4E0AD498 /* ZYNavigationBar-prefix.pch */,
+				8BADE9FCF1EE9522A1BC61E7E4BC195C /* ZYNavigationBar-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ZYNavigationBar";
+			sourceTree = "<group>";
+		};
+		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6BC680FD5565499F4AEBB348B4EBB488 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E6A9E6CDEBD1A88FB671CBF2C1825BBE /* MJRefresh */,
+				FBBF00141BDDECD233B27A57A475F384 /* ZYNavigationBar */,
+				4B469C44FB7DE0109D3F8E5093A13747 /* ZYShimmer */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				6BC680FD5565499F4AEBB348B4EBB488 /* Pods */,
+				F5994DA5AF98DB909445F4F0F45DB759 /* Products */,
+				25CD12C55EE6B3BEF3871C16538FC1F3 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		A95925BF6B788F29284F11C6C606192A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B7A5091DE071E0A13FA77095150E2A4E /* MJRefresh.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B694E63409F9FEA6D79E1722596745E3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7F25E1ACAFDDF5B11DA53690C0A34873 /* Info.plist */,
+				210F6BECD898FD94B4643C9CD5E5A800 /* ZYShimmer.modulemap */,
+				2B40C7CAFC388FF4A50B94B7B0D34C8B /* ZYShimmer.xcconfig */,
+				DDFEB8EB91401B0C83FADD913F59AF6B /* ZYShimmer-dummy.m */,
+				ECCD66F1124FA2E45E7BEE9766B80003 /* ZYShimmer-prefix.pch */,
+				0A7B43B76ED964D557C898636C2F4908 /* ZYShimmer-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ZYShimmer";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E0D919E635D23B70123790B8308F8EF /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E6A9E6CDEBD1A88FB671CBF2C1825BBE /* MJRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				3C873C62BD9DB8DA8047B70350F598BA /* MJRefresh.h */,
+				4BA53CB24520650BD85483B7EE80C03F /* MJRefreshAutoFooter.h */,
+				2433146DDE05FE196F2573201172B52F /* MJRefreshAutoFooter.m */,
+				CA95F43E57B382FCCCC9D917E3A9D595 /* MJRefreshAutoGifFooter.h */,
+				E3D51CEC0D0549CCA8AD013D7A6BF24C /* MJRefreshAutoGifFooter.m */,
+				BED2494B34183812388EDD61004B3A4F /* MJRefreshAutoNormalFooter.h */,
+				297714FEA45FCF2CBDF81CB7A9229B05 /* MJRefreshAutoNormalFooter.m */,
+				2B153BB7A025CFD89C398469F954342A /* MJRefreshAutoStateFooter.h */,
+				EC1BB3CC04C94F3D37563E4A9B414FAF /* MJRefreshAutoStateFooter.m */,
+				FE1E241B724ACE63E853326043E90ADB /* MJRefreshBackFooter.h */,
+				83ED52288C5BDC34B403660FA5501ACC /* MJRefreshBackFooter.m */,
+				C338FA6043ADE0FD6407548B1DC47FD5 /* MJRefreshBackGifFooter.h */,
+				DF564BB65120D19FD43C451974B80812 /* MJRefreshBackGifFooter.m */,
+				D00A27874CE87A92D635AA66294223CD /* MJRefreshBackNormalFooter.h */,
+				4675AA60EDA64E37FD12C8EB28404973 /* MJRefreshBackNormalFooter.m */,
+				85EE92F43E332E9A2BE4D22D351361F2 /* MJRefreshBackStateFooter.h */,
+				06EB1AEE43B584538098005C8AEF9B77 /* MJRefreshBackStateFooter.m */,
+				FB698EA4632E514AAC869306269B20E2 /* MJRefreshComponent.h */,
+				3A5340690DAD8587B58C97DC6738AD4A /* MJRefreshComponent.m */,
+				950BB48D38BFD337FC85E9E14D2F328B /* MJRefreshConst.h */,
+				501657107F68368AEF8C22A39BC0DB17 /* MJRefreshConst.m */,
+				DD25E6D6612C4DCC640AC19E18B7FF56 /* MJRefreshFooter.h */,
+				6DB2D3CBC461325253B3A917272F208F /* MJRefreshFooter.m */,
+				E2ABDA4DFAF870F776F278F653E7FA44 /* MJRefreshGifHeader.h */,
+				68E431AE8B025BB7752B653FB9237434 /* MJRefreshGifHeader.m */,
+				F34E0CF5E65B0DD54D86CE8170D42CCF /* MJRefreshHeader.h */,
+				93FCE278B251326324FAB9E03AC881A3 /* MJRefreshHeader.m */,
+				F7371F688F47017D047319246769063A /* MJRefreshNormalHeader.h */,
+				31090B9947848A2F5C38DB4BF4267758 /* MJRefreshNormalHeader.m */,
+				B65E8C7C95D0AA72E2977DDFE2A58091 /* MJRefreshStateHeader.h */,
+				F8D2A20094B8F07FB661EC87B1C66F30 /* MJRefreshStateHeader.m */,
+				DCD507A3A5E912DC1C941C1696926BA2 /* NSBundle+MJRefresh.h */,
+				D69CD02F1DA7D808AA2834CAA444D575 /* NSBundle+MJRefresh.m */,
+				151B15A89A59F7561EF472E30E3E3118 /* UIScrollView+MJExtension.h */,
+				2646F68188C8BAD39FDF4CBCD64689E6 /* UIScrollView+MJExtension.m */,
+				203FD254C26D90B493523F2D3667902F /* UIScrollView+MJRefresh.h */,
+				A2CE43DC86E1D40D2010B4189380D97F /* UIScrollView+MJRefresh.m */,
+				8D0136C5855C9047CF603714845E7407 /* UIView+MJExtension.h */,
+				608A55FBA02509EC6FAE71907F87DB81 /* UIView+MJExtension.m */,
+				A95925BF6B788F29284F11C6C606192A /* Resources */,
+				4B982C3572EDEC7CE366B8A9394038D5 /* Support Files */,
+			);
+			name = MJRefresh;
+			path = MJRefresh;
+			sourceTree = "<group>";
+		};
+		F5994DA5AF98DB909445F4F0F45DB759 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC72B9323E61A42CFB2AC60122257A4C /* MJRefresh.framework */,
+				E0CA8ED95180BFB3C0A8357C18154941 /* Pods_ZYRefreshAnimate.framework */,
+				176F2C92C3C18B538A8967A0AE9DDB0F /* ZYNavigationBar.framework */,
+				7B42945A27E4B835443C2A4AB09A970C /* ZYShimmer.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBBF00141BDDECD233B27A57A475F384 /* ZYNavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				AA4C870E8C265B9FD2BAF02F3FB7EA27 /* UIViewController+Extension.swift */,
+				C92B63492F7E838F9FF8D068BF9446FE /* ZYNavigationBar.swift */,
+				C530A29AE5132834762B7E825137BC21 /* ZYNavigationController.swift */,
+				4D56EF7F5800AD053473378087A8137F /* Support Files */,
+			);
+			name = ZYNavigationBar;
+			path = ZYNavigationBar;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		08EF78522D0C15FAC07E3DF1CA39E77C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				205C539389D123F0D635AEEE94E23A57 /* MJRefresh-umbrella.h in Headers */,
+				6C7D22626A2F5AD4BB1ACC02D8F10731 /* MJRefresh.h in Headers */,
+				19A2D61A783C422B8828408F98E56290 /* MJRefreshAutoFooter.h in Headers */,
+				2AE9F2C800AA6D4A6EDD9DB4B93DCDCF /* MJRefreshAutoGifFooter.h in Headers */,
+				79E7436378404C9DD06E9F65180D62A4 /* MJRefreshAutoNormalFooter.h in Headers */,
+				B967DE3AFEE4C96AAB002B8095B6C7C2 /* MJRefreshAutoStateFooter.h in Headers */,
+				72BA18069C0DFC671464EB497250D358 /* MJRefreshBackFooter.h in Headers */,
+				1364E587347DB7B32700946C39D69836 /* MJRefreshBackGifFooter.h in Headers */,
+				16145634E76498599E08EE59BF2BA9D9 /* MJRefreshBackNormalFooter.h in Headers */,
+				02B6166834FDE582A7475C4D021C532A /* MJRefreshBackStateFooter.h in Headers */,
+				DEF65EB64591CE2D6F99463627951710 /* MJRefreshComponent.h in Headers */,
+				57F9EB19DF46EC2590C8B10DB89D146E /* MJRefreshConst.h in Headers */,
+				62E84F67014328D5ED1B0F65775CDDFA /* MJRefreshFooter.h in Headers */,
+				7FC1CEA91F90834F660AA84E603B37AD /* MJRefreshGifHeader.h in Headers */,
+				370474488F17310C2E917826EE8B93FB /* MJRefreshHeader.h in Headers */,
+				366A0A2B7CC87D039FD802C7FF82BEE7 /* MJRefreshNormalHeader.h in Headers */,
+				7F9B9007891D36363BE6BE0CB08C1006 /* MJRefreshStateHeader.h in Headers */,
+				04E5A6920974A68B2D15090CBE56D58B /* NSBundle+MJRefresh.h in Headers */,
+				35CCA902DF0D8C0AB9C3A7C8AF4FD40D /* UIScrollView+MJExtension.h in Headers */,
+				7203872DAF858D609912A7D0F768FEAF /* UIScrollView+MJRefresh.h in Headers */,
+				B356C813D009D8F48B49B93F970B1F1B /* UIView+MJExtension.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A074C4D49F0DB637E1FD9D69B4FBDC3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CE74B846D7AF4EF27B0B68357DBBE26 /* ZYNavigationBar-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DBDE3FC75C16589EF3C2454FA1A1331 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34E7425ED442231DE8D428E84A3777C9 /* ZYShimmer-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DA7E1B1BC88A20E87B64E8B2302D0B7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28A43B7001AC6B77952975F0EB046163 /* Pods-ZYRefreshAnimate-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		546B747B9DB0515E059EEBA0B9E98B42 /* MJRefresh */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6F83A3523D8341EDA917BED02337C9A /* Build configuration list for PBXNativeTarget "MJRefresh" */;
+			buildPhases = (
+				08EF78522D0C15FAC07E3DF1CA39E77C /* Headers */,
+				43D5CCDE6E144B6F6AEE48CEDD25AC1C /* Sources */,
+				4330790BF93619542494717EF5872A17 /* Frameworks */,
+				862C3C5F3DC00E80837F3E923C463301 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MJRefresh;
+			productName = MJRefresh;
+			productReference = CC72B9323E61A42CFB2AC60122257A4C /* MJRefresh.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		88F1349FD9DC45A9CE9C902060A3F4CE /* ZYNavigationBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A964864297CD9E5D72F5971A8DE6BD1B /* Build configuration list for PBXNativeTarget "ZYNavigationBar" */;
+			buildPhases = (
+				1A074C4D49F0DB637E1FD9D69B4FBDC3 /* Headers */,
+				CC2EBD3275EBE62CCB45CCDF39F56FFC /* Sources */,
+				C7C8401A5A49DFA2573593ADDD0C6F34 /* Frameworks */,
+				D3717A7DD3169C62A3CF770589C1121E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZYNavigationBar;
+			productName = ZYNavigationBar;
+			productReference = 176F2C92C3C18B538A8967A0AE9DDB0F /* ZYNavigationBar.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C4B306D279D402CD0F6489C650D163FA /* Pods-ZYRefreshAnimate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5477F71C27103508D81057820B4D275 /* Build configuration list for PBXNativeTarget "Pods-ZYRefreshAnimate" */;
+			buildPhases = (
+				7DA7E1B1BC88A20E87B64E8B2302D0B7 /* Headers */,
+				C701201A1CC4A8175AE4E812E33E732E /* Sources */,
+				2C080A190A438FBEB31289A326D053AF /* Frameworks */,
+				2306E89F1B9B209307DAFBED8836F213 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				331E52E91C6AA75A5087ADD3D4AF1E41 /* PBXTargetDependency */,
+				916DB4C3AB930F43DC23271AAD419530 /* PBXTargetDependency */,
+				5955661F34C8FE48E9ECB9471C09B727 /* PBXTargetDependency */,
+			);
+			name = "Pods-ZYRefreshAnimate";
+			productName = "Pods-ZYRefreshAnimate";
+			productReference = E0CA8ED95180BFB3C0A8357C18154941 /* Pods_ZYRefreshAnimate.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F067B7CD0168D9F29E201C3657177F9A /* ZYShimmer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8785488C14B924E451FF21C481276E7B /* Build configuration list for PBXNativeTarget "ZYShimmer" */;
+			buildPhases = (
+				5DBDE3FC75C16589EF3C2454FA1A1331 /* Headers */,
+				8D93DB90EBE23E68FB2BF46C9FB3DF15 /* Sources */,
+				7D2350DA3CADD48EEC98A6E0FABB108F /* Frameworks */,
+				F25B54232762A9414353973374300CF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZYShimmer;
+			productName = ZYShimmer;
+			productReference = 7B42945A27E4B835443C2A4AB09A970C /* ZYShimmer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = F5994DA5AF98DB909445F4F0F45DB759 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				546B747B9DB0515E059EEBA0B9E98B42 /* MJRefresh */,
+				C4B306D279D402CD0F6489C650D163FA /* Pods-ZYRefreshAnimate */,
+				88F1349FD9DC45A9CE9C902060A3F4CE /* ZYNavigationBar */,
+				F067B7CD0168D9F29E201C3657177F9A /* ZYShimmer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2306E89F1B9B209307DAFBED8836F213 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		862C3C5F3DC00E80837F3E923C463301 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10884584B45C6564993981E004AE6B5B /* MJRefresh.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3717A7DD3169C62A3CF770589C1121E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F25B54232762A9414353973374300CF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		43D5CCDE6E144B6F6AEE48CEDD25AC1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				482B75E0CB8031D3F673F70242FA41FB /* MJRefresh-dummy.m in Sources */,
+				DB70C0344D46C9DBD3DBD9CA84C639D3 /* MJRefreshAutoFooter.m in Sources */,
+				B50A173CC006987E8682D89650F14F63 /* MJRefreshAutoGifFooter.m in Sources */,
+				6E560D2FE4A36AB742453E3CF5F4CE68 /* MJRefreshAutoNormalFooter.m in Sources */,
+				6D2FD545E0B463F0210B5242E1477721 /* MJRefreshAutoStateFooter.m in Sources */,
+				EEDC5683FF36946364A3C8344630705B /* MJRefreshBackFooter.m in Sources */,
+				F41FA61294C6ABEEAEDC06A420AD696E /* MJRefreshBackGifFooter.m in Sources */,
+				2EFA8D0D3C31B3A77612C955773F7D36 /* MJRefreshBackNormalFooter.m in Sources */,
+				C1117CCC45FA6780A4E9CC0879D5C3EA /* MJRefreshBackStateFooter.m in Sources */,
+				A7ED1FA2F59F020062DE3B579AF84F55 /* MJRefreshComponent.m in Sources */,
+				F024CC151BA9C2DCEEEDB1857C832CB8 /* MJRefreshConst.m in Sources */,
+				4E75F1293990391FB686C2BBD734E715 /* MJRefreshFooter.m in Sources */,
+				94237113054B0D5CE28D86E2C827BD72 /* MJRefreshGifHeader.m in Sources */,
+				B7170162BEBD63676519BFABE4D76287 /* MJRefreshHeader.m in Sources */,
+				EF873453BEEE867C2F8C43660CEB4A78 /* MJRefreshNormalHeader.m in Sources */,
+				31D52A4583BB36984AEC4C6D71265746 /* MJRefreshStateHeader.m in Sources */,
+				9A9931F189A4EF1FABC8C731BC11AEFE /* NSBundle+MJRefresh.m in Sources */,
+				81727E0FB34C0FE08D39BDE52687701F /* UIScrollView+MJExtension.m in Sources */,
+				CF76306C6168AD7A6C076288CA899B02 /* UIScrollView+MJRefresh.m in Sources */,
+				8234F492BBE286EA25736C05B5728C82 /* UIView+MJExtension.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D93DB90EBE23E68FB2BF46C9FB3DF15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				457D3835EAB90DC73DDD133736BFD872 /* ZYShimmer-dummy.m in Sources */,
+				B8E7316EF3F8D0EB9360C209D49E32F5 /* ZYShimmerLayer.swift in Sources */,
+				8CCA07391231EAA7832AFCCFF07A54D1 /* ZYShimmerView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C701201A1CC4A8175AE4E812E33E732E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E16C3DDB762314B45EA450476957D30 /* Pods-ZYRefreshAnimate-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC2EBD3275EBE62CCB45CCDF39F56FFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7B90E61C4907FE5F3872A04F9762EED /* UIViewController+Extension.swift in Sources */,
+				836D7FC3AF821117429EB18D5555C1E9 /* ZYNavigationBar-dummy.m in Sources */,
+				1E61B18A3921787916DD8AE3C8D5A3B0 /* ZYNavigationBar.swift in Sources */,
+				E83A8BE923CF841DE8515C9FC7B69DC8 /* ZYNavigationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		331E52E91C6AA75A5087ADD3D4AF1E41 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MJRefresh;
+			target = 546B747B9DB0515E059EEBA0B9E98B42 /* MJRefresh */;
+			targetProxy = 0EEC8665D342E81529830FA4D0165B7B /* PBXContainerItemProxy */;
+		};
+		5955661F34C8FE48E9ECB9471C09B727 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ZYShimmer;
+			target = F067B7CD0168D9F29E201C3657177F9A /* ZYShimmer */;
+			targetProxy = 902AFDEE2B46C3C5B6A6FFDB4C759941 /* PBXContainerItemProxy */;
+		};
+		916DB4C3AB930F43DC23271AAD419530 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ZYNavigationBar;
+			target = 88F1349FD9DC45A9CE9C902060A3F4CE /* ZYNavigationBar */;
+			targetProxy = A0D1E45FA38D733B28D05457BFBC24F3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0726F66096A01CE90788241346EFF772 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4EFCF81B20A4B9144CD7031C9721287 /* ZYNavigationBar.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ZYNavigationBar/ZYNavigationBar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZYNavigationBar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ZYNavigationBar/ZYNavigationBar.modulemap";
+				PRODUCT_MODULE_NAME = ZYNavigationBar;
+				PRODUCT_NAME = ZYNavigationBar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		267DD799F2B2CF4AFD5F342E9566CBE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8A405E8ED87B2D641FC1BCDE1568AEB /* MJRefresh.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MJRefresh/MJRefresh-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MJRefresh/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MJRefresh/MJRefresh.modulemap";
+				PRODUCT_MODULE_NAME = MJRefresh;
+				PRODUCT_NAME = MJRefresh;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		60DAF49CA7A9F362148D49C3C3123B2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		6624E9014D6C08B7C076E5828B04863B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90A30C94E8BC8EEFF903A9CA52F704E9 /* Pods-ZYRefreshAnimate.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ZYRefreshAnimate/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ZYRefreshAnimate/Pods-ZYRefreshAnimate.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		96F024237D6F7DCC0924F35BD12B9D17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E882C7C2CE976640E513E9984AE7D09 /* Pods-ZYRefreshAnimate.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ZYRefreshAnimate/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ZYRefreshAnimate/Pods-ZYRefreshAnimate.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C4EAA84F44D044E108500A81C635F21E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		D0468F73E1092905D37294D1C2215762 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B40C7CAFC388FF4A50B94B7B0D34C8B /* ZYShimmer.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ZYShimmer/ZYShimmer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZYShimmer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ZYShimmer/ZYShimmer.modulemap";
+				PRODUCT_MODULE_NAME = ZYShimmer;
+				PRODUCT_NAME = ZYShimmer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D40B387D4EA65F894EAC48FD72510F57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4EFCF81B20A4B9144CD7031C9721287 /* ZYNavigationBar.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ZYNavigationBar/ZYNavigationBar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZYNavigationBar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ZYNavigationBar/ZYNavigationBar.modulemap";
+				PRODUCT_MODULE_NAME = ZYNavigationBar;
+				PRODUCT_NAME = ZYNavigationBar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E2B7624B56C77100D868B62490463399 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B40C7CAFC388FF4A50B94B7B0D34C8B /* ZYShimmer.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ZYShimmer/ZYShimmer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZYShimmer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ZYShimmer/ZYShimmer.modulemap";
+				PRODUCT_MODULE_NAME = ZYShimmer;
+				PRODUCT_NAME = ZYShimmer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FEE23ECE280C9E03B3CFF87FB458EFDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8A405E8ED87B2D641FC1BCDE1568AEB /* MJRefresh.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MJRefresh/MJRefresh-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MJRefresh/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MJRefresh/MJRefresh.modulemap";
+				PRODUCT_MODULE_NAME = MJRefresh;
+				PRODUCT_NAME = MJRefresh;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60DAF49CA7A9F362148D49C3C3123B2A /* Debug */,
+				C4EAA84F44D044E108500A81C635F21E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8785488C14B924E451FF21C481276E7B /* Build configuration list for PBXNativeTarget "ZYShimmer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0468F73E1092905D37294D1C2215762 /* Debug */,
+				E2B7624B56C77100D868B62490463399 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A964864297CD9E5D72F5971A8DE6BD1B /* Build configuration list for PBXNativeTarget "ZYNavigationBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D40B387D4EA65F894EAC48FD72510F57 /* Debug */,
+				0726F66096A01CE90788241346EFF772 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5477F71C27103508D81057820B4D275 /* Build configuration list for PBXNativeTarget "Pods-ZYRefreshAnimate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96F024237D6F7DCC0924F35BD12B9D17 /* Debug */,
+				6624E9014D6C08B7C076E5828B04863B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6F83A3523D8341EDA917BED02337C9A /* Build configuration list for PBXNativeTarget "MJRefresh" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				267DD799F2B2CF4AFD5F342E9566CBE1 /* Debug */,
+				FEE23ECE280C9E03B3CFF87FB458EFDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

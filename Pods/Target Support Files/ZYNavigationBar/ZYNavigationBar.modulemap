@@ -1,0 +1,6 @@
+framework module ZYNavigationBar {
+  umbrella header "ZYNavigationBar-umbrella.h"
+
+  export *
+  module * { export * }
+}

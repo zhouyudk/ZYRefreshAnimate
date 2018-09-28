@@ -1,0 +1,404 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7BE6413A22F0698609A1C3D4 /* Pods_ZYRefreshAnimate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44B215B32865544F9EF74CC6 /* Pods_ZYRefreshAnimate.framework */; };
+		B58BBB66215CD5A800A9EB8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58BBB65215CD5A800A9EB8D /* AppDelegate.swift */; };
+		B58BBB68215CD5A800A9EB8D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58BBB67215CD5A800A9EB8D /* ViewController.swift */; };
+		B58BBB6B215CD5A800A9EB8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B58BBB69215CD5A800A9EB8D /* Main.storyboard */; };
+		B58BBB6D215CD5A800A9EB8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B58BBB6C215CD5A800A9EB8D /* Assets.xcassets */; };
+		B58BBB70215CD5A800A9EB8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B58BBB6E215CD5A800A9EB8D /* LaunchScreen.storyboard */; };
+		B5C77DD8215E0B95005A113D /* ZYTextRefreshAnimat.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C77DD7215E0B95005A113D /* ZYTextRefreshAnimat.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0414C8715BF338A3E29392B6 /* Pods-ZYRefreshAnimate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYRefreshAnimate.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZYRefreshAnimate/Pods-ZYRefreshAnimate.release.xcconfig"; sourceTree = "<group>"; };
+		44B215B32865544F9EF74CC6 /* Pods_ZYRefreshAnimate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZYRefreshAnimate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B58BBB62215CD5A800A9EB8D /* ZYRefreshAnimate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZYRefreshAnimate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B58BBB65215CD5A800A9EB8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B58BBB67215CD5A800A9EB8D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B58BBB6A215CD5A800A9EB8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B58BBB6C215CD5A800A9EB8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B58BBB6F215CD5A800A9EB8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B58BBB71215CD5A800A9EB8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5C77DD7215E0B95005A113D /* ZYTextRefreshAnimat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYTextRefreshAnimat.swift; sourceTree = "<group>"; };
+		E6E6AB563E6DB628D3561AFC /* Pods-ZYRefreshAnimate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYRefreshAnimate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZYRefreshAnimate/Pods-ZYRefreshAnimate.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B58BBB5F215CD5A800A9EB8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BE6413A22F0698609A1C3D4 /* Pods_ZYRefreshAnimate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		152D38F411C247D231534C3E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44B215B32865544F9EF74CC6 /* Pods_ZYRefreshAnimate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		633B6F84C9350B5C2EE06904 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E6E6AB563E6DB628D3561AFC /* Pods-ZYRefreshAnimate.debug.xcconfig */,
+				0414C8715BF338A3E29392B6 /* Pods-ZYRefreshAnimate.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B58BBB59215CD5A800A9EB8D = {
+			isa = PBXGroup;
+			children = (
+				B58BBB64215CD5A800A9EB8D /* ZYRefreshAnimate */,
+				B58BBB63215CD5A800A9EB8D /* Products */,
+				633B6F84C9350B5C2EE06904 /* Pods */,
+				152D38F411C247D231534C3E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B58BBB63215CD5A800A9EB8D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B58BBB62215CD5A800A9EB8D /* ZYRefreshAnimate.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B58BBB64215CD5A800A9EB8D /* ZYRefreshAnimate */ = {
+			isa = PBXGroup;
+			children = (
+				B58BBB65215CD5A800A9EB8D /* AppDelegate.swift */,
+				B58BBB67215CD5A800A9EB8D /* ViewController.swift */,
+				B5C77DD7215E0B95005A113D /* ZYTextRefreshAnimat.swift */,
+				B58BBB69215CD5A800A9EB8D /* Main.storyboard */,
+				B58BBB6C215CD5A800A9EB8D /* Assets.xcassets */,
+				B58BBB6E215CD5A800A9EB8D /* LaunchScreen.storyboard */,
+				B58BBB71215CD5A800A9EB8D /* Info.plist */,
+			);
+			path = ZYRefreshAnimate;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B58BBB61215CD5A800A9EB8D /* ZYRefreshAnimate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B58BBB74215CD5A800A9EB8D /* Build configuration list for PBXNativeTarget "ZYRefreshAnimate" */;
+			buildPhases = (
+				88F881C09ACB65242F00E489 /* [CP] Check Pods Manifest.lock */,
+				B58BBB5E215CD5A800A9EB8D /* Sources */,
+				B58BBB5F215CD5A800A9EB8D /* Frameworks */,
+				B58BBB60215CD5A800A9EB8D /* Resources */,
+				97916440DD53268415A575A0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZYRefreshAnimate;
+			productName = ZYRefreshAnimate;
+			productReference = B58BBB62215CD5A800A9EB8D /* ZYRefreshAnimate.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B58BBB5A215CD5A800A9EB8D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "yu zhou";
+				TargetAttributes = {
+					B58BBB61215CD5A800A9EB8D = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B58BBB5D215CD5A800A9EB8D /* Build configuration list for PBXProject "ZYRefreshAnimate" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B58BBB59215CD5A800A9EB8D;
+			productRefGroup = B58BBB63215CD5A800A9EB8D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B58BBB61215CD5A800A9EB8D /* ZYRefreshAnimate */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B58BBB60215CD5A800A9EB8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B58BBB70215CD5A800A9EB8D /* LaunchScreen.storyboard in Resources */,
+				B58BBB6D215CD5A800A9EB8D /* Assets.xcassets in Resources */,
+				B58BBB6B215CD5A800A9EB8D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		88F881C09ACB65242F00E489 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZYRefreshAnimate-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97916440DD53268415A575A0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ZYRefreshAnimate/Pods-ZYRefreshAnimate-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/ZYNavigationBar/ZYNavigationBar.framework",
+				"${BUILT_PRODUCTS_DIR}/ZYShimmer/ZYShimmer.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZYNavigationBar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZYShimmer.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZYRefreshAnimate/Pods-ZYRefreshAnimate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B58BBB5E215CD5A800A9EB8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B58BBB68215CD5A800A9EB8D /* ViewController.swift in Sources */,
+				B5C77DD8215E0B95005A113D /* ZYTextRefreshAnimat.swift in Sources */,
+				B58BBB66215CD5A800A9EB8D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B58BBB69215CD5A800A9EB8D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B58BBB6A215CD5A800A9EB8D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B58BBB6E215CD5A800A9EB8D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B58BBB6F215CD5A800A9EB8D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B58BBB72215CD5A800A9EB8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B58BBB73215CD5A800A9EB8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B58BBB75215CD5A800A9EB8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6E6AB563E6DB628D3561AFC /* Pods-ZYRefreshAnimate.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 784Z62Q47H;
+				INFOPLIST_FILE = ZYRefreshAnimate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zy.ZYRefreshAnimate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B58BBB76215CD5A800A9EB8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0414C8715BF338A3E29392B6 /* Pods-ZYRefreshAnimate.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 784Z62Q47H;
+				INFOPLIST_FILE = ZYRefreshAnimate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zy.ZYRefreshAnimate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B58BBB5D215CD5A800A9EB8D /* Build configuration list for PBXProject "ZYRefreshAnimate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B58BBB72215CD5A800A9EB8D /* Debug */,
+				B58BBB73215CD5A800A9EB8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B58BBB74215CD5A800A9EB8D /* Build configuration list for PBXNativeTarget "ZYRefreshAnimate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B58BBB75215CD5A800A9EB8D /* Debug */,
+				B58BBB76215CD5A800A9EB8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B58BBB5A215CD5A800A9EB8D /* Project object */;
+}
