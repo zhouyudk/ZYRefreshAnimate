@@ -16,19 +16,8 @@ class ZYTextRefreshAnimat: MJRefreshHeader {
     var shimmerView: ZYShimmerView = ZYShimmerView()
     override var state: MJRefreshState{
         didSet{
-            switch state {
-            case .willRefresh:
-                print("willRefresh")
-            case .pulling:
-                print("pulling")
-            case .refreshing:
+            if state == .refreshing {
                 shimmerView.shimmering = true
-                print("refreshing")
-            case .idle:
-                
-                print("idle")
-            default:
-                break
             }
         }
     }
@@ -36,23 +25,24 @@ class ZYTextRefreshAnimat: MJRefreshHeader {
         didSet{
             let percent = pullingPercent > 0 ? (pullingPercent > 1 ? 1 : pullingPercent) : 0
             if shimmerView.shimmering == false {
-                shapeLayer.strokeEnd = percent
+                shapeLayer.strokeEnd = pow(percent, 4)
             }else{
-                shapeLayer.transform = CATransform3DMakeScale(percent, percent, 1)
-                if percent > 0.3 {
-                    shapeLayer.transform = CATransform3DMakeScale(0.8, 0.8, 1)
-                }else{
-                    shimmerView.shimmering = false
-                    shapeLayer.transform = CATransform3DMakeScale(1, 1, 1)
-                }
+                CATransaction.begin()
+                CATransaction.setAnimationDuration(0.7)
+                //动画完成后将属性复原
+                CATransaction.setCompletionBlock({
+                    self.shimmerView.shimmering = false
+                    self.shapeLayer.transform = CATransform3DMakeScale(1, 1, 1)
+                    self.shapeLayer.strokeEnd = 0
+                })
+                shapeLayer.transform = CATransform3DMakeScale(0.3, 0.3, 1)
+                CATransaction.commit()
             }
         }
     }
     override func prepare() {
         super.prepare()
         containerView = UIView()
-//        self.addSubview(containerView)
-        
         shapeLayer = CAShapeLayer()
         shapeLayer.frame = containerView.bounds
         shapeLayer.isGeometryFlipped = true
@@ -61,7 +51,7 @@ class ZYTextRefreshAnimat: MJRefreshHeader {
         shapeLayer.lineJoin = kCALineJoinRound
         containerView.layer.addSublayer(shapeLayer)
         
-        let path = UIBezierPath(text: "RefreshAnimat", attrs: [NSAttributedStringKey(rawValue: NSAttributedStringKey.font.rawValue) : UIFont.systemFont(ofSize: 25)])
+        let path = UIBezierPath(text: "RefreshAnimat", attrs: [NSAttributedStringKey(rawValue: NSAttributedStringKey.font.rawValue) : UIFont.systemFont(ofSize: 28)])
         shapeLayer.bounds = path.cgPath.boundingBox
         shapeLayer.path = path.cgPath
         shapeLayer.strokeColor = UIColor.orange.cgColor
@@ -71,11 +61,6 @@ class ZYTextRefreshAnimat: MJRefreshHeader {
         shimmerView = ZYShimmerView()
         self.addSubview(shimmerView)
         shimmerView.contentView = containerView
-//        let pathAnimation = CABasicAnimation(keyPath: "strokeEnd")
-//        pathAnimation.duration = 3.0
-//        pathAnimation.fromValue = 0.1
-//        pathAnimation.toValue = 1.0
-//        shapeLayer.add(pathAnimation, forKey: "pahtAnim")
     }
     
     override func placeSubviews() {
@@ -85,12 +70,20 @@ class ZYTextRefreshAnimat: MJRefreshHeader {
         shapeLayer.position = CGPoint(x: containerView.bounds.width/2, y: 27)
     }
     
-    
 }
+
+
+// MARK: - UIBezierPath
 extension UIBezierPath {
+    
+    /// 使用String生成bezier曲线
+    ///
+    /// - Parameters:
+    ///   - text: 文本
+    ///   - attrs: 文本样式
     convenience init(text:String,attrs:[NSAttributedStringKey : Any]) {
         let attrStr = NSAttributedString(string: text, attributes: attrs as [NSAttributedStringKey : Any])
-        let paths = CGMutablePath()//CGPath(ellipseIn: CGRect(), transform: nil)
+        let paths = CGMutablePath()
         let line  = CTLineCreateWithAttributedString(attrStr)
         let runArray = CTLineGetGlyphRuns(line)
         for i in 0..<CFArrayGetCount(runArray) {

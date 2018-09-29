@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreImage
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

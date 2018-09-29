@@ -10,17 +10,26 @@ import UIKit
 import MJRefresh
 enum RefreshAnimatType: Int {
     case textAnimat
+    case uc
 }
 class ViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
-    var refreshAnimat:RefreshAnimatType?
+    var refreshAnimat:RefreshAnimatType = .uc
     override func viewDidLoad() {
         super.viewDidLoad()
         self.automaticallyAdjustsScrollViewInsets = false
-        self.tableView.mj_header = ZYTextRefreshAnimat(refreshingBlock: {
-            self.perform(#selector(self.endRefreshing), with: nil, afterDelay: 5)
-        })
+        switch refreshAnimat {
+        case .textAnimat:
+            self.tableView.mj_header = ZYTextRefreshAnimat(refreshingBlock: {
+                self.perform(#selector(self.endRefreshing), with: nil, afterDelay: 5)
+            })
+        case .uc:
+            self.tableView.mj_header = ZYUcRefreshAnimat(refreshingBlock: {
+                self.perform(#selector(self.endRefreshing), with: nil, afterDelay: 5)
+            })
+        }
+        
     }
     @objc func endRefreshing() {
         self.tableView.mj_header.endRefreshing()
