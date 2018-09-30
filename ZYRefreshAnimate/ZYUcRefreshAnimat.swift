@@ -48,25 +48,27 @@ class ZYUcRefreshAnimat: MJRefreshHeader {
                 anim.isRemovedOnCompletion = false
                 anim.fillMode = kCAFillModeForwards
                 smallCircleLayer.add(anim, forKey: "smallCircleLayerY")
+            }else if state == .idle {
+                if isRefreshed == true {
+                    self.perform(#selector(resetLayers), with: nil, afterDelay: 0.7)
+                    isRefreshed = false
+                }
             }
         }
     }
     
+    @objc func resetLayers() {
+        bigCircleLayer.removeAllAnimations()
+        smallCircleLayer.removeAllAnimations()
+        bigCircleLayer.transform = CATransform3DMakeRotation(CGFloat.pi*1.5, 1, 0, 1)
+        smallCircleLayer.transform = CATransform3DMakeRotation(0, 1, 0, 1)
+    }
+    
     override var pullingPercent: CGFloat{
         didSet{
-            if isRefreshed {
-                if pullingPercent == 0 {
-                    bigCircleLayer.removeAllAnimations()
-                    smallCircleLayer.removeAllAnimations()
-                    bigCircleLayer.transform = CATransform3DMakeRotation(CGFloat.pi*1.5, 1, 0, 1)
-                    smallCircleLayer.transform = CATransform3DMakeRotation(0, 1, 0, 1)
-                    isRefreshed = false
-                }
-            } else {
-                let percent = pullingPercent > 0 ? (pullingPercent > 1 ? 1 : pullingPercent) : 0
-                bigCircleLayer.transform = CATransform3DMakeRotation(CGFloat.pi*1.5*(1-pow(percent, 4)), 1, 0, 1)
-                smallCircleLayer.transform = CATransform3DMakeRotation(CGFloat.pi*1.5*pow(percent, 4), 1, 0, 1)
-            }
+            let percent = pullingPercent > 0 ? (pullingPercent > 1 ? 1 : pullingPercent) : 0
+            bigCircleLayer.transform = CATransform3DMakeRotation(CGFloat.pi*1.5*(1-pow(percent, 4)), 1, 0, 1)
+            smallCircleLayer.transform = CATransform3DMakeRotation(CGFloat.pi*1.5*pow(percent, 4), 1, 0, 1)
         }
     }
     
