@@ -11,11 +11,12 @@ import MJRefresh
 enum RefreshAnimatType: Int {
     case textAnimat
     case uc
+    case imagePath
 }
 class ViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
-    var refreshAnimat:RefreshAnimatType = .uc
+    var refreshAnimat:RefreshAnimatType = .imagePath
     override func viewDidLoad() {
         super.viewDidLoad()
         self.automaticallyAdjustsScrollViewInsets = false
@@ -26,6 +27,10 @@ class ViewController: UIViewController {
             })
         case .uc:
             self.tableView.mj_header = ZYUcRefreshAnimat(refreshingBlock: {
+                self.perform(#selector(self.endRefreshing), with: nil, afterDelay: 5)
+            })
+        case .imagePath:
+            self.tableView.mj_header = ZYImagePathRefreshAnimat(refreshingBlock: {
                 self.perform(#selector(self.endRefreshing), with: nil, afterDelay: 5)
             })
         }
@@ -55,8 +60,9 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ViewController")
+        let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ViewController") as! ViewController
         vc.title = "RefreshAnimat"
+        vc.refreshAnimat = RefreshAnimatType(rawValue: indexPath.row) ?? .textAnimat
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }
