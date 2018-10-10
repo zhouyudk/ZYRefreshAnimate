@@ -8,47 +8,41 @@
 
 import Foundation
 import MJRefresh
+import ZYShimmer
 
 class ZYImagePathRefreshAnimat: MJRefreshHeader {
-    var shapeLayer = CAShapeLayer()
-    var lightSpotView = CALayer()
+    var containerView: UIView = UIView()
+    var shapeLayer: CAShapeLayer = CAShapeLayer()
+    var shimmerView: ZYShimmerView = ZYShimmerView()
     override var state: MJRefreshState{
         didSet{
             if state == .refreshing {
-                lightSpotView.isHidden = false
-                let anim = CAKeyframeAnimation(keyPath: "position")
-                anim.fillMode = kCAFillModeForwards
-                anim.isRemovedOnCompletion = false
-                anim.duration = 3
-                anim.repeatCount = Float(Int.max)
-                anim.path = shapeLayer.path
-                lightSpotView.add(anim, forKey: "lightSpotViewPosition")
-            }else if state == .idle {
-                if lightSpotView.isHidden == false {
-                    self.perform(#selector(resetLayers), with: nil, afterDelay: 0.7)
-                }
+                shimmerView.shimmering = true
             }
         }
     }
-    
-    @objc func resetLayers() {
-        lightSpotView.isHidden = true
-        lightSpotView.removeAllAnimations()
-        shapeLayer.strokeEnd = 0
-    }
-    
     override var pullingPercent: CGFloat {
         didSet{
-            if lightSpotView.isHidden {
-                let percent = pullingPercent > 0 ? (pullingPercent > 1 ? 1 : pullingPercent) : 0
+            let percent = pullingPercent > 0 ? (pullingPercent > 1 ? 1 : pullingPercent) : 0
+            if shimmerView.shimmering == false {
                 shapeLayer.strokeEnd = pow(percent, 4)
+            }else{
+                CATransaction.begin()
+                CATransaction.setAnimationDuration(0.7)
+                //动画完成后将属性复原
+                CATransaction.setCompletionBlock({
+                    self.shimmerView.shimmering = false
+                    self.shapeLayer.transform = CATransform3DMakeScale(1, 1, 1)
+                    self.shapeLayer.strokeEnd = 0
+                })
+                shapeLayer.transform = CATransform3DMakeScale(0.3, 0.3, 1)
+                CATransaction.commit()
             }
         }
     }
     
     override func prepare() {
         super.prepare()
-        shapeLayer = CAShapeLayer()
         let pathPath = UIBezierPath()
         pathPath.move(to: CGPoint(x: 57.21, y: 66.65))
         pathPath.addCurve(to: CGPoint(x: 57.73, y: 65.71), controlPoint1: CGPoint(x: 57.53, y: 66.43), controlPoint2: CGPoint(x: 57.71, y: 66.11))
@@ -80,28 +74,19 @@ class ZYImagePathRefreshAnimat: MJRefreshHeader {
         shapeLayer.strokeColor = UIColor.black.cgColor
         shapeLayer.lineWidth = 2
         shapeLayer.strokeEnd = 0
-        self.layer.addSublayer(shapeLayer)
-        
-//        lightSpotView = UIVisualEffectView(effect: UIBlurEffect(style: UIBlurEffectStyle.light))
-//        lightSpotView.bounds = CGRect(x: 0, y: 0, width: 5, height: 5)
-//        lightSpotView.layer.cornerRadius = 1
-//        lightSpotView.subviews.last?.backgroundColor = UIColor.white.withAlphaComponent(0.7)
-//        lightSpotView.isHidden = true
-//        self.addSubview(lightSpotView)
-        
-        lightSpotView = CALayer()//UIVisualEffectView(effect: UIBlurEffect(style: UIBlurEffectStyle.light))
-        lightSpotView.bounds = CGRect(x: 0, y: 0, width: 5, height: 5)
-        lightSpotView.cornerRadius = 1
-        lightSpotView.backgroundColor = UIColor.white.withAlphaComponent(0.7).cgColor
-        //lightSpotView.subviews.last?.backgroundColor = UIColor.white.withAlphaComponent(0.7)
-        lightSpotView.isHidden = true
-        shapeLayer.addSublayer(lightSpotView)
-        
+
+        containerView.layer.addSublayer(shapeLayer)
+
+        self.addSubview(shimmerView)
+        shimmerView.shimmeringPauseDuration = 0.2
+        shimmerView.contentView = containerView
+  
     }
     
     override func placeSubviews() {
         super.placeSubviews()
-        shapeLayer.position = CGPoint(x: self.mj_w/2, y: self.mj_h/2)
-        lightSpotView.position = CGPoint(x: 57.21, y: 66.65)
+        shimmerView.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 54)
+        containerView.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 54)
+        shapeLayer.position = CGPoint(x: containerView.bounds.width/2, y: 27)
     }
 }

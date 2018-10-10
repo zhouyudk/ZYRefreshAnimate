@@ -42,8 +42,6 @@ class ZYTextRefreshAnimat: MJRefreshHeader {
     }
     override func prepare() {
         super.prepare()
-        containerView = UIView()
-        shapeLayer = CAShapeLayer()
         shapeLayer.frame = containerView.bounds
         shapeLayer.isGeometryFlipped = true
         shapeLayer.fillColor = UIColor.clear.cgColor
@@ -83,6 +81,36 @@ extension UIBezierPath {
     ///   - attrs: 文本样式
     convenience init(text:String,attrs:[NSAttributedStringKey : Any]) {
         let attrStr = NSAttributedString(string: text, attributes: attrs as [NSAttributedStringKey : Any])
+        let paths = CGMutablePath()
+        let line  = CTLineCreateWithAttributedString(attrStr)
+        let runArray = CTLineGetGlyphRuns(line)
+        for i in 0..<CFArrayGetCount(runArray) {
+            let run = unsafeBitCast(CFArrayGetValueAtIndex(runArray, i), to: CTRun.self)
+            let key = Unmanaged.passRetained(kCTFontAttributeName).autorelease().toOpaque()
+            let dic =  CTRunGetAttributes(run)
+            let runFont = unsafeBitCast(CFDictionaryGetValue(dic, key), to: CTFont.self)
+            for runGlyphIndex in 0..<CTRunGetGlyphCount(run) {
+                let glyphRange = CFRangeMake(runGlyphIndex, 1)
+                var glyph: CGGlyph = CGGlyph()
+                var position: CGPoint = CGPoint()
+                CTRunGetGlyphs(run, glyphRange, &glyph)
+                CTRunGetPositions(run, glyphRange, &position)
+                
+                let path = CTFontCreatePathForGlyph(runFont, glyph, nil)
+                if path == nil {
+                    continue
+                }
+                let t = CGAffineTransform(translationX: position.x, y: position.y)
+                paths.addPath(path!, transform: t)
+            }
+        }
+        self.init()
+        self.move(to: CGPoint.zero)
+        self.append(UIBezierPath(cgPath: paths))
+    }
+    
+    convenience init(attrStr:NSAttributedString) {
+//        let attrStr = NSAttributedString(string: text, attributes: attrs as [NSAttributedStringKey : Any])
         let paths = CGMutablePath()
         let line  = CTLineCreateWithAttributedString(attrStr)
         let runArray = CTLineGetGlyphRuns(line)
