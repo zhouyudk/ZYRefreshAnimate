@@ -12,6 +12,7 @@ enum RefreshAnimatType: Int {
     case textAnimat
     case uc
     case imagePath
+    case mail
 }
 class ViewController: UIViewController {
 
@@ -31,6 +32,10 @@ class ViewController: UIViewController {
             })
         case .imagePath:
             self.tableView.mj_header = ZYImagePathRefreshAnimat(refreshingBlock: {
+                self.perform(#selector(self.endRefreshing), with: nil, afterDelay: 5)
+            })
+        case .mail:
+            self.tableView.mj_header = ZYMailRefreshAnimat(refreshingBlock: {
                 self.perform(#selector(self.endRefreshing), with: nil, afterDelay: 5)
             })
         }

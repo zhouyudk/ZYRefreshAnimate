@@ -13,9 +13,11 @@
 		B58BBB6B215CD5A800A9EB8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B58BBB69215CD5A800A9EB8D /* Main.storyboard */; };
 		B58BBB6D215CD5A800A9EB8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B58BBB6C215CD5A800A9EB8D /* Assets.xcassets */; };
 		B58BBB70215CD5A800A9EB8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B58BBB6E215CD5A800A9EB8D /* LaunchScreen.storyboard */; };
+		B5C3A43B21747BDC004038DA /* ZYLineToCircleRefreshAnimat.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C3A43A21747BDC004038DA /* ZYLineToCircleRefreshAnimat.swift */; };
 		B5C77DD8215E0B95005A113D /* ZYTextRefreshAnimat.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C77DD7215E0B95005A113D /* ZYTextRefreshAnimat.swift */; };
 		B5C77DDA215F1859005A113D /* ZYUcRefreshAnimat.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C77DD9215F1859005A113D /* ZYUcRefreshAnimat.swift */; };
 		B5C77DDC21605FD4005A113D /* ZYImagePathRefreshAnimat.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C77DDB21605FD4005A113D /* ZYImagePathRefreshAnimat.swift */; };
+		B5F92034216DEC3F00790106 /* ZYMailRefreshAnimat.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F92033216DEC3F00790106 /* ZYMailRefreshAnimat.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,9 +30,11 @@
 		B58BBB6C215CD5A800A9EB8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B58BBB6F215CD5A800A9EB8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B58BBB71215CD5A800A9EB8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5C3A43A21747BDC004038DA /* ZYLineToCircleRefreshAnimat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYLineToCircleRefreshAnimat.swift; sourceTree = "<group>"; };
 		B5C77DD7215E0B95005A113D /* ZYTextRefreshAnimat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYTextRefreshAnimat.swift; sourceTree = "<group>"; };
 		B5C77DD9215F1859005A113D /* ZYUcRefreshAnimat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYUcRefreshAnimat.swift; sourceTree = "<group>"; };
 		B5C77DDB21605FD4005A113D /* ZYImagePathRefreshAnimat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYImagePathRefreshAnimat.swift; sourceTree = "<group>"; };
+		B5F92033216DEC3F00790106 /* ZYMailRefreshAnimat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYMailRefreshAnimat.swift; sourceTree = "<group>"; };
 		E6E6AB563E6DB628D3561AFC /* Pods-ZYRefreshAnimate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYRefreshAnimate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZYRefreshAnimate/Pods-ZYRefreshAnimate.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,6 +93,8 @@
 				B5C77DD7215E0B95005A113D /* ZYTextRefreshAnimat.swift */,
 				B5C77DD9215F1859005A113D /* ZYUcRefreshAnimat.swift */,
 				B5C77DDB21605FD4005A113D /* ZYImagePathRefreshAnimat.swift */,
+				B5F92033216DEC3F00790106 /* ZYMailRefreshAnimat.swift */,
+				B5C3A43A21747BDC004038DA /* ZYLineToCircleRefreshAnimat.swift */,
 				B58BBB69215CD5A800A9EB8D /* Main.storyboard */,
 				B58BBB6C215CD5A800A9EB8D /* Assets.xcassets */,
 				B58BBB6E215CD5A800A9EB8D /* LaunchScreen.storyboard */,
@@ -214,11 +220,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5C3A43B21747BDC004038DA /* ZYLineToCircleRefreshAnimat.swift in Sources */,
 				B58BBB68215CD5A800A9EB8D /* ViewController.swift in Sources */,
 				B5C77DD8215E0B95005A113D /* ZYTextRefreshAnimat.swift in Sources */,
 				B5C77DDA215F1859005A113D /* ZYUcRefreshAnimat.swift in Sources */,
 				B5C77DDC21605FD4005A113D /* ZYImagePathRefreshAnimat.swift in Sources */,
 				B58BBB66215CD5A800A9EB8D /* AppDelegate.swift in Sources */,
+				B5F92034216DEC3F00790106 /* ZYMailRefreshAnimat.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
