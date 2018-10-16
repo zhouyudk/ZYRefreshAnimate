@@ -13,6 +13,7 @@ enum RefreshAnimatType: Int {
     case uc
     case imagePath
     case mail
+    case lineToCircle
 }
 class ViewController: UIViewController {
 
@@ -38,6 +39,10 @@ class ViewController: UIViewController {
             self.tableView.mj_header = ZYMailRefreshAnimat(refreshingBlock: {
                 self.perform(#selector(self.endRefreshing), with: nil, afterDelay: 5)
             })
+        case .lineToCircle:
+            self.tableView.mj_header = ZYLineToCircleRefreshAnimat(refreshingBlock: {
+                self.perform(#selector(self.endRefreshing), with: nil, afterDelay: 5)
+            })
         }
         
     }
@@ -61,6 +66,7 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCell") else { return UITableViewCell() }
+        cell.textLabel?.text = "\(indexPath.row)"
         return cell
     }
     
