@@ -22,6 +22,7 @@ class ZYMailRefreshAnimat: MJRefreshHeader {
                 anim.duration = 1
                 anim.isRemovedOnCompletion = false
                 anim.fillMode = kCAFillModeForwards
+                anim.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
                 self.replicatorLayer.add(anim, forKey: "transform.rotation.z")
                 
                 self.replicatorLayer.instanceDelay = 1/14

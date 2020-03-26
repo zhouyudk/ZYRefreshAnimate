@@ -1,5 +1,5 @@
 PODS:
-  - MJRefresh (3.1.15.7)
+  - MJRefresh (3.3.1)
   - ZYNavigationBar (1.0.3)
   - ZYShimmer (0.1.1)
 
@@ -15,10 +15,10 @@ SPEC REPOS:
     - ZYShimmer
 
 SPEC CHECKSUMS:
-  MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
+  MJRefresh: eeda70fbf0ad277f3178cef1cd0c3532591d6237
   ZYNavigationBar: 7850b3a64bc51151fe300bb6958de8cb746f7655
   ZYShimmer: 78e408cc5d73412cadaf963507e884bdbd73f336
 
 PODFILE CHECKSUM: cba7e779f06e0834da778e5836b56e77f9a3dd5b
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.1
