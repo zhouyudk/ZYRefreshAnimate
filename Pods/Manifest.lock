@@ -1,7 +1,7 @@
 PODS:
   - MJRefresh (3.3.1)
-  - ZYNavigationBar (1.0.3)
-  - ZYShimmer (0.1.1)
+  - ZYNavigationBar (1.0.4)
+  - ZYShimmer (0.1.2)
 
 DEPENDENCIES:
   - MJRefresh
@@ -9,16 +9,16 @@ DEPENDENCIES:
   - ZYShimmer
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - MJRefresh
     - ZYNavigationBar
     - ZYShimmer
 
 SPEC CHECKSUMS:
   MJRefresh: eeda70fbf0ad277f3178cef1cd0c3532591d6237
-  ZYNavigationBar: 7850b3a64bc51151fe300bb6958de8cb746f7655
-  ZYShimmer: 78e408cc5d73412cadaf963507e884bdbd73f336
+  ZYNavigationBar: c8411b23c33dcb42ac2090a246dd03c598ce4b14
+  ZYShimmer: f76ede9a4167bff3caecdf855998e54ace71ca77
 
 PODFILE CHECKSUM: cba7e779f06e0834da778e5836b56e77f9a3dd5b
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.9.1

@@ -21,7 +21,9 @@ public extension UIViewController {
         static var zy_backInteractiveKey = "zy_backInteractiveKey"
         static var zy_swipeBackEnabledKey = "zy_swipeBackEnabledKey"
     }
-    public var zy_barStyle: UIBarStyle {
+    
+    /// navigationBar样式
+    var zy_barStyle: UIBarStyle {
         get{
             guard let style = objc_getAssociatedObject(self, &ZYAssociatedKeys.zy_barStyleKey) as? UIBarStyle else {
                 return UINavigationBar.appearance().barStyle
@@ -32,7 +34,8 @@ public extension UIViewController {
         }
     }
     
-    public var zy_barTintColor: UIColor? {
+    /// navigationBar背景色，可以通过设置color的alpha值实现毛玻璃
+    var zy_barTintColor: UIColor? {
         get {
             return objc_getAssociatedObject(self, &ZYAssociatedKeys.zy_barTintColorKey) as? UIColor
         }set {
@@ -41,7 +44,8 @@ public extension UIViewController {
         }
     }
     
-    public var zy_barImage: UIImage? {
+    /// navigationBar背景图，优先级高于zy_barTintColor，设置后zy_barTintColor失效
+    var zy_barImage: UIImage? {
         get {
             return objc_getAssociatedObject(self, &ZYAssociatedKeys.zy_barImageKey) as? UIImage
         }set {
@@ -49,7 +53,8 @@ public extension UIViewController {
         }
     }
     
-    public var zy_tintColor: UIColor {
+    /// navigationItem颜色
+    var zy_tintColor: UIColor {
         get{
             guard let color = objc_getAssociatedObject(self, &ZYAssociatedKeys.zy_tintColorKey) as? UIColor else {
                 return UIColor.black//UINavigationBar.appearance().tintColor == nil ?  : UINavigationBar.appearance().tintColor
@@ -60,10 +65,11 @@ public extension UIViewController {
         }
     }
     
-    public var zy_titleTextAttributes: [NSAttributedStringKey : Any] {
+    /// navigationItem标题
+    var zy_titleTextAttributes: [NSAttributedString.Key : Any] {
         get{
-            guard let attr = objc_getAssociatedObject(self, &ZYAssociatedKeys.zy_titleTextAttributesKey) as? [NSAttributedStringKey : Any] else {
-                return UINavigationBar.appearance().titleTextAttributes ?? [NSAttributedStringKey : Any]()
+            guard let attr = objc_getAssociatedObject(self, &ZYAssociatedKeys.zy_titleTextAttributesKey) as? [NSAttributedString.Key : Any] else {
+                return UINavigationBar.appearance().titleTextAttributes ?? [NSAttributedString.Key : Any]()
             }
             return attr
         }set {
@@ -71,7 +77,8 @@ public extension UIViewController {
         }
     }
     
-    public var zy_barAlpha: CGFloat {
+    /// navigationBar背景透明度
+    var zy_barAlpha: CGFloat {
         get{
             if self.zy_barIsHidden {
                 return 0
@@ -85,7 +92,8 @@ public extension UIViewController {
         }
     }
     
-    public var zy_barIsHidden: Bool {
+    /// 是否显示navigationBar
+    var zy_barIsHidden: Bool {
         get{
             return objc_getAssociatedObject(self, &ZYAssociatedKeys.zy_barIsHiddenKey) as? Bool ?? false
         }set {
@@ -102,15 +110,16 @@ public extension UIViewController {
         }
     }
     
-    public var zy_barShadowIsHidden: Bool {
+    /// 是否显示shadowImage
+    var zy_barShadowIsHidden: Bool {
         get{
             return zy_barIsHidden ? zy_barIsHidden : objc_getAssociatedObject(self, &ZYAssociatedKeys.zy_barShadowIsHiddenKey) as? Bool ?? false
         }set {
             objc_setAssociatedObject(self, &ZYAssociatedKeys.zy_barShadowIsHiddenKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
         }
     }
-    
-    public var zy_backInteractive: Bool {
+    /// 是否可以右滑返回和navigationBar返回按钮返回
+    var zy_backInteractive: Bool {
         get{
             return objc_getAssociatedObject(self, &ZYAssociatedKeys.zy_backInteractiveKey) as? Bool ?? true
         }set {
@@ -118,7 +127,8 @@ public extension UIViewController {
         }
     }
     
-    public var zy_swipeBackEnabled: Bool {
+    /// 右滑返回
+    var zy_swipeBackEnabled: Bool {
         get{
             return objc_getAssociatedObject(self, &ZYAssociatedKeys.zy_swipeBackEnabledKey) as? Bool ?? true
         }set {
@@ -126,18 +136,18 @@ public extension UIViewController {
         }
     }
     
-    var zy_computedBarShadowAlpha: CGFloat {
+    internal var zy_computedBarShadowAlpha: CGFloat {
         return self.zy_barShadowIsHidden ? 0 : self.zy_barAlpha
     }
     
-    var zy_computedBarImage: UIImage? {
+    internal var zy_computedBarImage: UIImage? {
         let image = self.zy_barImage
         guard image == nil else { return image }
         guard self.zy_barTintColor == nil else { return nil }
         return UINavigationBar.appearance().backgroundImage(for: .default)
     }
     
-    var zy_computedBarTintColor: UIColor? {
+    internal var zy_computedBarTintColor: UIColor? {
         guard self.zy_barImage == nil else { return nil }
         let color = self.zy_barTintColor
         guard color == nil else { return color }
@@ -147,22 +157,22 @@ public extension UIViewController {
     }
     
     
-    public func zy_needsUpdateNavigationBar() {
+    func zy_needsUpdateNavigationBar() {
         guard let nav = self.navigationController as? ZYNavigationController else { return }
         nav.updateNavigationBarForViewController(controller: self)
     }
     
-    public func zy_needsUpdateNavigationBarAlpha() {
+    func zy_needsUpdateNavigationBarAlpha() {
         guard let nav = self.navigationController as? ZYNavigationController else { return }
         nav.updateNavigationBarAlphaForViewController(self)
     }
     
-    public func zy_needsUpdateNavigationBarColorOrImage() {
+    func zy_needsUpdateNavigationBarColorOrImage() {
         guard let nav = self.navigationController as? ZYNavigationController else { return }
         nav.updateNavigationBarColorOrImageForViewController(self)
     }
     
-    public func zy_needsUpdateNavigationBarShadowAlpha() {
+    func zy_needsUpdateNavigationBarShadowAlpha() {
         guard let nav = self.navigationController as? ZYNavigationController else { return }
         nav.updateNavigationBarShadowAlphaForViewController(self)
     }
