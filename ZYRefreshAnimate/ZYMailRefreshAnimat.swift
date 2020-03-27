@@ -21,8 +21,8 @@ class ZYMailRefreshAnimat: MJRefreshHeader {
                 anim.toValue = CGFloat.pi
                 anim.duration = 1
                 anim.isRemovedOnCompletion = false
-                anim.fillMode = kCAFillModeForwards
-                anim.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+                anim.fillMode = CAMediaTimingFillMode.forwards
+                anim.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
                 self.replicatorLayer.add(anim, forKey: "transform.rotation.z")
                 
                 self.replicatorLayer.instanceDelay = 1/14
@@ -32,7 +32,7 @@ class ZYMailRefreshAnimat: MJRefreshHeader {
                 anim.duration = 1
                 anim.isRemovedOnCompletion = false
                 anim.repeatCount = Float(Int.max)
-                anim.fillMode = kCAFillModeForwards
+                anim.fillMode = CAMediaTimingFillMode.forwards
                 self.contentLayer.add(anim, forKey: "opacity")
                 
                 self.isRefreshed = true

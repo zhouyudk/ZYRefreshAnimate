@@ -46,10 +46,10 @@ class ZYTextRefreshAnimat: MJRefreshHeader {
         shapeLayer.isGeometryFlipped = true
         shapeLayer.fillColor = UIColor.clear.cgColor
         shapeLayer.lineWidth = 2.0
-        shapeLayer.lineJoin = kCALineJoinRound
+        shapeLayer.lineJoin = CAShapeLayerLineJoin.round
         containerView.layer.addSublayer(shapeLayer)
         
-        let path = UIBezierPath(text: "RefreshAnimat", attrs: [NSAttributedStringKey(rawValue: NSAttributedStringKey.font.rawValue) : UIFont.systemFont(ofSize: 28)])
+        let path = UIBezierPath(text: "RefreshAnimat", attrs: [NSAttributedString.Key(rawValue: NSAttributedString.Key.font.rawValue) : UIFont.systemFont(ofSize: 28)])
         shapeLayer.bounds = path.cgPath.boundingBox
         shapeLayer.path = path.cgPath
         shapeLayer.strokeColor = UIColor.orange.cgColor
@@ -79,8 +79,8 @@ extension UIBezierPath {
     /// - Parameters:
     ///   - text: 文本
     ///   - attrs: 文本样式
-    convenience init(text:String,attrs:[NSAttributedStringKey : Any]) {
-        let attrStr = NSAttributedString(string: text, attributes: attrs as [NSAttributedStringKey : Any])
+    convenience init(text:String,attrs:[NSAttributedString.Key : Any]) {
+        let attrStr = NSAttributedString(string: text, attributes: attrs as [NSAttributedString.Key : Any])
         let paths = CGMutablePath()
         let line  = CTLineCreateWithAttributedString(attrStr)
         let runArray = CTLineGetGlyphRuns(line)

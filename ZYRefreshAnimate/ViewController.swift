@@ -14,6 +14,10 @@ enum RefreshAnimatType: Int {
     case imagePath
     case mail
     case lineToCircle
+
+    static var count:Int {
+        RefreshAnimatType.lineToCircle.rawValue+1
+    }
 }
 class ViewController: UIViewController {
 
@@ -47,7 +51,7 @@ class ViewController: UIViewController {
         
     }
     @objc func endRefreshing() {
-        self.tableView.mj_header.endRefreshing()
+        self.tableView.mj_header?.endRefreshing()
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
@@ -61,7 +65,7 @@ class ViewController: UIViewController {
 
 extension ViewController: UITableViewDelegate,UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return RefreshAnimatType.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

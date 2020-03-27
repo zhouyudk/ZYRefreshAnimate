@@ -22,7 +22,7 @@ class ZYUcRefreshAnimat: MJRefreshHeader {
                 anim.duration = 2
                 anim.repeatCount = Float(Int.max)
                 anim.isRemovedOnCompletion = false
-                anim.fillMode = kCAFillModeForwards
+                anim.fillMode = CAMediaTimingFillMode.forwards
                 bigCircleLayer.add(anim, forKey: "bigCircleLayerX")
                 
                 anim = CAKeyframeAnimation(keyPath: "transform.rotation.z")
@@ -30,7 +30,7 @@ class ZYUcRefreshAnimat: MJRefreshHeader {
                 anim.duration = 2
                 anim.repeatCount = Float(Int.max)
                 anim.isRemovedOnCompletion = false
-                anim.fillMode = kCAFillModeForwards
+                anim.fillMode = CAMediaTimingFillMode.forwards
                 bigCircleLayer.add(anim, forKey: "bigCircleLayerY")
                 
                 anim = CAKeyframeAnimation(keyPath: "transform.rotation.x")
@@ -38,7 +38,7 @@ class ZYUcRefreshAnimat: MJRefreshHeader {
                 anim.duration = 2
                 anim.repeatCount = Float(Int.max)
                 anim.isRemovedOnCompletion = false
-                anim.fillMode = kCAFillModeForwards
+                anim.fillMode = CAMediaTimingFillMode.forwards
                 smallCircleLayer.add(anim, forKey: "smallCircleLayerX")
                 
                 anim = CAKeyframeAnimation(keyPath: "transform.rotation.z")
@@ -46,7 +46,7 @@ class ZYUcRefreshAnimat: MJRefreshHeader {
                 anim.duration = 2
                 anim.repeatCount = Float(Int.max)
                 anim.isRemovedOnCompletion = false
-                anim.fillMode = kCAFillModeForwards
+                anim.fillMode = CAMediaTimingFillMode.forwards
                 smallCircleLayer.add(anim, forKey: "smallCircleLayerY")
             }else if state == .idle {
                 if isRefreshed == true {
